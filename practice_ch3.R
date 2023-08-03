@@ -36,7 +36,7 @@ ggplot(sah, aes(age, sbp)) + geom_point() +
   scale_x_continuous(limits=c(0, 100)) # 가로축 범위를 0~100 으로 수정
 
 ## 3-10 줄바꿈 위치에 유의
-ggplot(sah, aes(age, sbp)) + geom_point() 
+ggplot(sah, aes(age, sbp)) + geom_point()
 + scale_x_continuous(limits=c(0, 100)) # 더하기 앞에서 줄바꿈으로 오류 발생
 
 ## 3-11 x축, y축 범위 좁히기
@@ -69,7 +69,7 @@ ggplot(sah, aes(x=age, y=log(ldl)))+geom_point()
 ggplot(sah, aes(x=age, y=ldl))+geom_point()+scale_y_continuous(trans="log")
 
 ### Program 3-17
-b<-ggplot(sah, aes(x=BMI.cat, y=ldl))+geom_boxplot()
+b <-ggplot(sah, aes(x=BMI.cat, y=ldl))+geom_boxplot()
 b
 
 ### Program 3-18
